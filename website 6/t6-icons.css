@@ -1,0 +1,60 @@
+#one
+{
+    position: fixed;
+    width: 178px;
+    height: 100px;
+}
+
+.infinity:before,.infinity:after 
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    border: 10px solid rgb(218, 104, 104);
+    border-radius: 50px 50px 0 50px;
+    transform: rotate(-45deg);
+}
+
+.infinity:after 
+{
+    left: auto;
+    right: 0;
+    border-radius: 50px 50px 50px 0;
+    transform: rotate(45deg);
+}
+
+#two
+{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(218, 104, 104);
+    top: 150;
+    left: 75;
+    transform: rotate(-45deg);
+}
+
+.heart:before,.heart:after 
+{
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    border: 10px solid rgb(218, 104, 104);
+    background-color: rgb(218, 104, 104);
+}
+
+.heart:after 
+{
+    bottom: 30;
+    border-radius: 50px 50px 50px;
+}
+
+.heart:before
+{
+    left: 30;
+    border-radius: 50px 50px 50px;
+}
