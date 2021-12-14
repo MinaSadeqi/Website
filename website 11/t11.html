@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title>android logo</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="keywords" content="logo, android, android logo">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div id="android">
+            <div id="head">
+                <div id="left_eye"></div>
+                <div id="right_eye"></div>
+            </div>
+            <div id="body">
+                <div class="hand" id="left_hand"></div>
+                <div class="hand" id="right_hand"></div>
+                <div id="bel"></div>
+            </div>
+            <div id="legs">
+                <div id="left_leg"></div>
+                <div id="right_leg"></div>
+            </div>
+            <div id="hs">
+                <div id="left_hs"></div>
+                <div id="right_hs"></div>
+            </div>
+        </div>
+
+        
+        <script>
+            var leftHand = document.getElementById("left_hand")
+            var rightHand = document.getElementById("right_hand")
+            var belly = document.getElementById("bel")
+            var face = document.getElementById("head")
+            var leftEye = document.getElementById("left_eye")
+            var rightEye = document.getElementById("right_eye")
+
+            leftHand.onclick = function()
+            {
+                leftHand.style.transform = "rotate(150deg)";
+                leftHand.style.transition = "3s";
+                setTimeout(function () 
+                {
+                    leftHand.style.transform = "rotate(0deg)";
+                    leftHand.style.transition = "3sec";
+                }, 3000)
+            }
+
+            rightHand.onclick = function()
+            {
+                rightHand.style.transform = "rotate(-150deg)";
+                rightHand.style.transition = "3s";
+                setTimeout(function () 
+                {
+                    rightHand.style.transform = "rotate(0deg)";
+                    rightHand.style.transition = "3sec";
+                }, 3000)
+            }
+
+            belly.onclick = function()
+            {
+                leftEye.style.height = "5px";
+                rightEye.style.height = "5px";
+                leftEye.style.transition = "1s";
+                rightEye.style.transition = "1s";
+                setTimeout(function () 
+                {                
+                    leftEye.style.height = "15px";
+                    rightEye.style.height = "15px";
+                    leftEye.style.transition = "1sec";
+                    rightEye.style.transition = "1sec";
+                }, 2000)
+            }
+
+            face.onclick = function()
+            {
+                leftEye.style.height = "25px";
+                rightEye.style.height = "25px";
+                leftEye.style.transition = "1s";
+                rightEye.style.transition = "1s";
+                setTimeout(function () 
+                {                
+                    leftEye.style.height = "20px";
+                    rightEye.style.height = "20px";
+                    leftEye.style.transition = "1sec";
+                    rightEye.style.transition = "1sec";
+                }, 2000)
+            }
+
+        </script>
+    </body>
+</html>
